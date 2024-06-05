@@ -6,6 +6,36 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello welcome</h1>
+    <div class="container">
+        <div class="left">
+            <h1>Student Registration</h1>
+
+            <form id="record-form">
+                <input type="text" id="name" placeholder="Enter name" required>
+                <input type="number" id="age" placeholder="Enter age" required>
+                <input type="text" id="email" placeholder="Enter email" required>
+                <button type="submit">Add Record </button>
+                <input type="hidden" id="edit-index" value="-1">
+            </form>
+        </div>
+
+        <div class="right">
+            <h2> Records </h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="record-list"></tbody>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
